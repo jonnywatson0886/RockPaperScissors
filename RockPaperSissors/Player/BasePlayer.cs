@@ -9,7 +9,7 @@ namespace RockPaperSissors.Player
     public abstract class BasePlayer
     {
         public string Name;
-        protected int Score;
+        public int Score;
         public GameChoices SelectedChoice;
 
         public BasePlayer()

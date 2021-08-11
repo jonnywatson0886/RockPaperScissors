@@ -12,11 +12,10 @@ namespace RockPaperSissors.GameEngine
         private int turn;
         private BasePlayer _player1;
         private BasePlayer _player2;
-        private int winningScore;
+        public int winningScore = 5;
         private bool gameWon;
         public MainGameEngine(BasePlayer player, BasePlayer player2)
         {
-            winningScore = 5;
             turn = 0;
             _player1 = player;
             _player2 = player2;
@@ -62,7 +61,7 @@ namespace RockPaperSissors.GameEngine
             PrintScores();
         }
 
-        private BasePlayer FindRoundWinner()
+        public BasePlayer FindRoundWinner()
         {
             if (_player1.SelectedChoice != _player2.SelectedChoice)
             {
